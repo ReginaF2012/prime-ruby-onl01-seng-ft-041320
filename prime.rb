@@ -1,7 +1,10 @@
-def prime?(num)
-  return false if num <= 1
-  (2..(num - 1)).each do |n|
-    return false if num % n == 0
+def prime?(int)
+ return false if int <= 1 
+  i = 2
+  while i < int
+    return false if int % i == 0
+    i += 1
   end
+  false
   true
 end
